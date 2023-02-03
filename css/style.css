@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width:600px) {
+    .header {
+        background-image: url(/images/mobile/image-hero.jpg);
+        background-size: cover;
+        width: 100%;
+
+    }
+
+    .header ul {
+        display: none
+    }
+
+    .panner {
+        width: 80%;
+        margin: 30% auto;
+    }
+
+    .flex,
+    .leader,
+    .h2 {
+        margin: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .leader-img img {
+        margin: auto;
+    }
+
+    .h2 {
+        padding-top: 70px;
+        position: relative;
+    }
+
+    .h2 a {
+        position: absolute;
+        top: 200%;
+    }
+
+    .flex .flexes {
+        padding-top: 25px;
+        margin: auto;
+    }
+
+    .flexes .over {
+        position: absolute;
+        top: 53%;
+        left: 5%;
+        font-size: 30px;
+        width: 180px;
+    }
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .footer .footer1 .ul li {
+        padding-top: 30px;
+    }
+
+    .footer2 .icons {
+        padding-top: 30px;
+        padding-bottom: 25px;
+
+    }
+
+    .icons img {
+        padding-right: 15px;
+    }
+
+
+}
+
+/* start of medias */
+@media (min-width:600px) {
+    .header {
+        background-image: url(/images/desktop/image-hero.jpg);
+        padding-left: 100px;
+       
+    }
+
+    .header ul {
+        width: max-content;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 100px;
+
+    }
+
+    .header .links {
+        width: 85%;
+        padding-top: 50px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .panner {
+        width: 27%;
+        margin-left: 8%;
+        margin-top: 7%;
+    }
+
+    .leader-img {
+        width: 40%;
+        position: relative
+    }
+
+    .leader .p {
+        width: 30%;
+        background-color: white;
+        padding: 50px 0 0 50px;
+        position: absolute;
+        top: 110%;
+        right: 15%
+    }
+
+    .h2 {
+        padding-top: 150px;
+        padding-bottom: 70px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+       gap:20px 20px;
+        
+    }
+
+    .flex .flex {
+        margin-top: 25px
+    }
+
+    .flexes .over {
+        position: absolute;
+        top: 77%;
+        left: 10%;
+        font-size: 25px;
+        width: 120px;
+    }
+
+    .footer {
+
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 100px;
+        justify-content: space-between;
+    }
+
+    .footer1 ul {
+        display: flex;
+        padding-top: 40px;
+    }
+
+    .footer1 .ul {
+        margin-left: -40px;
+    }
+
+    .footer2 {
+        padding-right: 200px;
+        text-align: right;
+    }
+
+    .footer2 .intity {
+        padding-top: 40px;
+    }
+
+}
+
+/* end of medias */
+
+
+
+
+.header {
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+
+}
+
+/* .header ul {
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.header .links {
+    width: 85%;
+    padding-top: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+} */
+
+li {
+    margin-left: 40px;
+    list-style-type: none;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Alata', sans-serif;
+}
+
+.panner {
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: solid hsl(0, 0%, 100%) 1px;
+
+    padding: 15px;
+    text-align: left;
+}
+
+.panner h2 {
+    font-size: 47px;
+    color: hsl(0, 0%, 100%)
+}
+
+.leader,
+.h2,
+.flex {
+    width: 85%;
+    margin: auto ;
+    text-align: center;
+}
+
+.leader .p {
+    margin-top: 40px;
+}
+
+/* start of leader */
+.leader-img {
+    margin-top: 40px;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    color: hsl(0, 0%, 41%);
+}
+
+.leader .p p {
+
+    color: hsl(0, 0%, 55%);
+    text-align: left;
+    padding-top: 17px;
+    padding-bottom: 25px;
+    line-height: 25px;
+}
+
+.h2 a {
+    text-decoration: none;
+    display: block;
+    width: 140px;
+    height: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    border: solid hsl(0, 0%, 41%) 1px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.h2 a:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: black;
+}
+
+/* end of leader */
+
+/* start of flex */
+.flex {
+    margin-bottom: 100px;
+}
+
+.flexes {
+    position: relative;
+}
+
+.over {
+    color: hsl(0, 0%, 100%);
+    /* width: 170px; */
+    font-family: 'Josefin Sans', sans-serif;
+
+    font-weight: 200;
+}
+
+/* end of flex */
+
+/* start of footer  */
+.footer {
+    background-color: black;
+    width: 100%;
+    font-family: 'Alata', sans-serif;
+}
+
+.intity p {
+    color: hsl(0, 0%, 55%);
+    padding-bottom: 50px;
+}
+
+.icons img {
+    padding-right: 15px;
+}
+
+/* end of footer */
